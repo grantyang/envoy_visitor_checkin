@@ -1,22 +1,164 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
+}
+
+.header {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#envoy-logo {
+  height: 40px;
+}
+
+.search-bar {
+  box-sizing: border-box;
+  padding-left: 15px;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  font-size: 14px;
+  height: 40px;
+  width: 700px;
+}
+
+.button {
+  width: 80px;
+  padding: 0 10px;
+  border-radius: 4px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  cursor: pointer;
+}
+
+.primary-button {
+  height: 40px;
+  padding: 0 10px;
+  font-size: 14px;
+  background-color: red;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.secondary-button {
+  height: 40px;
+  padding: 0 10px;
+  font-size: 14px;
+  background-color: lightslategrey;
+  color: white;
+}
+
+.add-visitor-button {
+  height: 40px;
+  padding: 0 10px;
+  background-color: red;
+  color: white;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: auto;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  background-color: white;
+}
+.modal:focus {
+  outline: 0;
+}
+.input-container {
+  margin-top: 10px;
+}
+.input {
+  box-sizing: border-box;
+  padding-left: 10px;
+  margin-top: 12px;
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+}
+
+.sign-out-time {
+  display: inline-flex;
+  padding: 1px 0;
+  width: auto;
+  height: 20px;
+  color: black;
+  cursor: default;
+}
+
+.sign-out-button {
+  display: inline-flex;
+  width: auto;
+  height: 20px;
+  border: 1px solid grey;
+  padding: 1px 10px;
+  color: black;
+}
+
+.sign-out-button-loading {
+  display: inline-flex;
+  width: auto;
+  height: 20px;
+  border: 1px solid lightgrey;
+  padding: 1px 10px;
+  color: lightgrey;
+  cursor: wait;
+}
+
+.visitor-list {
+  width: 900px;
+}
+.visitor-list-header {
+  margin: 20px 0;
+  font-size: 12pt;
+  font-weight: 700;
+}
+
+.visitor-list-item {
+  border-top: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  font-size: 11pt;
+  padding: 3px 0;
+}
+
+.column-data {
+  display: inline-block;
+  width: 300px;
+}
+
+.filters {
+  display: flex;
+  margin-top: 10px;
+}
+
+.filters-dropdown {
+  margin-left: 5px;
 }
